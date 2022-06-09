@@ -1,0 +1,29 @@
+{
+    "name": "sharoff45/library-cs-fixer",
+    "type": "library",
+    "description": "Code style fixer",
+    "license": "proprietary",
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "icanhazstring/composer-unused": true
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "friendsofphp/php-cs-fixer": "^v3.8.0"
+    },
+    "require-dev": {
+        "icanhazstring/composer-unused": "^0.7.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sharoff45\\Library\\CodeStyleFixer\\": "src/"
+        }
+    }
+}
